@@ -1,12 +1,12 @@
 Summary:	GBiblioteka is a book and document manager
 Summary(pl):	Program u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów elektronicznych
 Name:		gbiblioteka
-Version:	0.5
-Release:	0.2
+Version:	0.6
+Release:	1
 License:	GPL v2
 Group:		Applications/Archiving	
 Source0:	http://members.lycos.co.uk/gbiblioteka/%{name}-%{version}.tar.gz
-# Source0-md5:	8f4c5237f26396208c2390dddb06ff15
+# Source0-md5:	77bcb252e8486167d409de162e2f901d
 URL:		http://members.lycos.co.uk/gbiblioteka/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2.6.0
