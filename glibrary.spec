@@ -46,5 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-/usr/share/gbiblioteka/glade/gbiblioteka.glade
-/usr/share/gbiblioteka/pixmaps/gbiblioteka.png
+%{_datadir}/gbiblioteka
