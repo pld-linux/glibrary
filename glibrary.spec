@@ -1,16 +1,20 @@
+%define         beta beta1 
+#
 Summary:	GBiblioteka - a book and document manager
 Summary(pl):	Program u³atwiaj±cy zarz±dzanie zbiorami ksi±¿ek i dokumentów elektronicznych
 Name:		gbiblioteka
-Version:	0.7
-Release:	1
+Version:	1.0
+Release:	1.%{beta}
 License:	GPL v2
 Group:		Applications/Archiving	
-Source0:	http://members.lycos.co.uk/gbiblioteka/%{name}-%{version}.tar.gz
-# Source0-md5:	ec8a2f08037dc714e99d0e71691d5206
-URL:		http://members.lycos.co.uk/gbiblioteka/
+Source0:	http://kermit.w.staszic.waw.pl/gb/download/%{name}-%{version}-%{beta}.tar.gz
+# Source0-md5:	dfbafc7744cb25d6a03b48d2ad952054
+URL:		http://kermit.w.staszic.waw.pl/gb/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.6.0
+BuildRequires:	libglade2
 BuildRequires:	sqlite3-devel >= 3.1
+Requires:	sqlite3 >= 3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,7 +25,7 @@ Program GBiblioteka u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
 elektronicznych. 
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{beta}
 
 %build
 %configure
@@ -42,3 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+/usr/share/gbiblioteka/glade/gbiblioteka.glade
+/usr/share/gbiblioteka/pixmaps/gbiblioteka.png
