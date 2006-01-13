@@ -23,7 +23,7 @@ Program Glibrary u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
 elektronicznych. 
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %configure
@@ -44,9 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-#%{_datadir}
-/usr/share/applications/glibrary.desktop
-/usr/share/glibrary/glade/glibrary.glade
-/usr/share/glibrary/glade/glibrary.gladep
-/usr/share/glibrary/pixmaps/glibrary.png
-/usr/share/glibrary/pixmaps/glibrary_icon.png
+%{_datadir}/glibrary
+%{_desktopdir}/glibrary.desktop
