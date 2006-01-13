@@ -1,15 +1,13 @@
-%define         beta beta1 
-#
-Summary:	GBiblioteka - a book and document manager
+Summary:	Glibrary - a book and document manager
 Summary(pl):	Program u³atwiaj±cy zarz±dzanie zbiorami ksi±¿ek i dokumentów elektronicznych
-Name:		gbiblioteka
+Name:		glibrary
 Version:	1.0
-Release:	1.%{beta}
+Release:	1
 License:	GPL v2
 Group:		Applications/Archiving	
-Source0:	http://kermit.w.staszic.waw.pl/gb/download/%{name}-%{version}-%{beta}.tar.gz
-# Source0-md5:	dfbafc7744cb25d6a03b48d2ad952054
-URL:		http://kermit.w.staszic.waw.pl/gb/
+Source0:	http://www.glibrary.svx.pl/download/1_0/%{name}-%{version}.tar.gz
+# Source0-md5:	ea6299c9876d027e9a5beab4d6b05ca4
+URL:		http://www.glibrary.svx.pl/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	libglade2
@@ -18,14 +16,14 @@ Requires:	sqlite3 >= 3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GBiblioteka is a book and document manager.
+Glibrary is a book and document manager.
 
 %description -l pl
-Program GBiblioteka u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
+Program Glibrary u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
 elektronicznych. 
 
 %prep
-%setup -q -n %{name}-%{version}-%{beta}
+%setup -q -n %{name}-%{version}
 
 %build
 %configure
@@ -46,4 +44,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/gbiblioteka
+#%{_datadir}
+/usr/share/applications/glibrary.desktop
+/usr/share/glibrary/glade/glibrary.glade
+/usr/share/glibrary/glade/glibrary.gladep
+/usr/share/glibrary/pixmaps/glibrary.png
+/usr/share/glibrary/pixmaps/glibrary_icon.png
