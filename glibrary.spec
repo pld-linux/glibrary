@@ -1,12 +1,12 @@
 Summary:	Glibrary - a book and document manager
 Summary(pl):	Program u³atwiaj±cy zarz±dzanie zbiorami ksi±¿ek i dokumentów elektronicznych
 Name:		glibrary
-Version:	1.0
+Version:	1.0.1
 Release:	1
 License:	GPL v2
 Group:		Applications/Archiving	
-Source0:	http://www.glibrary.svx.pl/download/1_0/%{name}-%{version}.tar.gz
-# Source0-md5:	ea6299c9876d027e9a5beab4d6b05ca4
+Source0:	http://www.glibrary.svx.pl/download/1_0_1/%{name}-%{version}.tar.gz
+# Source0-md5:	f4b2d4e8943e83a8897c8711bfaf7ecb
 URL:		http://www.glibrary.svx.pl/
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.6.0
