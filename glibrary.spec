@@ -4,7 +4,7 @@ Name:		glibrary
 Version:	1.0.1
 Release:	1
 License:	GPL v2
-Group:		Applications/Archiving	
+Group:		Applications/Archiving
 Source0:	http://www.glibrary.svx.pl/download/1_0_1/%{name}-%{version}.tar.gz
 # Source0-md5:	f4b2d4e8943e83a8897c8711bfaf7ecb
 URL:		http://www.glibrary.svx.pl/
@@ -20,7 +20,7 @@ Glibrary is a book and document manager.
 
 %description -l pl
 Program Glibrary u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
-elektronicznych. 
+elektronicznych.
 
 %prep
 %setup -q
@@ -41,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
+%defattr(644,root,root,755)
 %doc ChangeLog
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
