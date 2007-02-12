@@ -1,5 +1,5 @@
 Summary:	Glibrary - a book and document manager
-Summary(pl):	Program u³atwiaj±cy zarz±dzanie zbiorami ksi±¿ek i dokumentów elektronicznych
+Summary(pl.UTF-8):   Program uÅ‚atwiajÄ…cy zarzÄ…dzanie zbiorami ksiÄ…Å¼ek i dokumentÃ³w elektronicznych
 Name:		glibrary
 Version:	1.0.1
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Glibrary is a book and document manager.
 
-%description -l pl
-Program Glibrary u³atwia zarz±dzanie zbiorami ksi±¿ek i dokumentów
+%description -l pl.UTF-8
+Program Glibrary uÅ‚atwia zarzÄ…dzanie zbiorami ksiÄ…Å¼ek i dokumentÃ³w
 elektronicznych.
 
 %prep
